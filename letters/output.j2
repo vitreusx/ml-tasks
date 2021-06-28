@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Output</title>
+</head>
+<body>
+  {% for cluster in clusters -%}
+    {% for item in cluster -%}
+      <img src={{item}} loading="lazy"/>
+    {%- endfor %}
+    <hr>
+  {%- endfor %}
+</body>
